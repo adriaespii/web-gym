@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Membresías de Golden Eagle - Elige el plan perfecto para alcanzar tus objetivos fitness. Entrenamiento personalizado y acceso ilimitado.">
+    <title>Membresías - Golden Eagle</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="archivos/Home -_files/cropped-logo-trans-aguila-95x88.png" alt="Golden Eagle Logo">
+                GOLDEN EAGLE
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="membresias.html" class="nav-link active">Membresías</a></li>
+                <li><a href="instalaciones.html" class="nav-link">Instalaciones</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="#planes" class="btn btn-primary">Empieza Hoy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh; background: linear-gradient(rgba(10,10,26,0.7), rgba(10,10,26,0.7)), url('archivos/Home\ -_files/Captura-de-pantalla-2025-05-14-175223-1.png') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Hazlo por ti.</h1>
+            <p class="hero-subtitle">Empieza hoy con nuestra promoción especial de lanzamiento.</p>
+            <a href="https://goldeneagle.virtuagym.com/webshop/product?id=fe01d4bfed605fd75d3d7847f0813a884d75&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-primary btn-large" target="_blank">APÚNTATE</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Product Cards) -->
+    <section class="section" id="planes">
+        <div class="container">
+            <div class="grid grid-3" style="align-items: stretch; justify-content: center;">
+                
+                <!-- Plan 1: Mensual (Featured Offer) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">-19% OFERTA LIMITADA</div>
+                    <h3 class="pricing-title">Cuota Mensual</h3>
+                    <div class="pricing-price">
+                        <span style="font-size: 1.5rem; text-decoration: line-through; color: var(--color-gray); margin-right: 10px;">36.99€</span>
+                        29.99€
+                    </div>
+                    <p class="pricing-period"></p>
+                    
+                    <div class="countdown-container mb-md" id="offerTimer">
+                        <div class="digit-box">
+                            <span class="digit-value" id="hours">00</span>
+                            <span class="digit-label">Horas</span>
+                        </div>
+                        <div class="digit-box">
+                            <span class="digit-value" id="minutes">00</span>
+                            <span class="digit-label">Min</span>
+                        </div>
+                        <div class="digit-box">
+                            <span class="digit-value" id="seconds">00</span>
+                            <span class="digit-label">Seg</span>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>Matrícula GRATIS</li>
+                        <li>Acceso Ilimitado</li>
+                        <li>App de Entrenamiento</li>
+                    </ul>
+
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=b10165ad491232a083a867424a9cb6877a81&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-primary full-width btn-pulse" target="_blank">COMPRAR</a>
+                    
+                    <div class="trust-badges mt-md">
+                        <span class="trust-item">🔒 Pago Seguro</span>
+                    </div>
+                </div>
+
+                <!-- Plan 2: Trimestral -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">AHORRO</div>
+                    <h3 class="pricing-title">Cuota Trimestral</h3>
+                    <div class="pricing-price">
+                        <span style="font-size: 1.5rem; text-decoration: line-through; color: var(--color-gray); margin-right: 10px;">109.99€</span>
+                        79.99€
+                    </div>
+                    <p class="pricing-period"></p>
+
+                    <ul class="pricing-features">
+                        <li>Matrícula GRATIS</li>
+                        <li>Acceso Ilimitado</li>
+                        <li>Ahorro Trimestral</li>
+                    </ul>
+
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=ea843a7d2d69f9820bb58fbcbbaf023288d2&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-primary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+                <!-- Plan 3: Opcional (Anual) -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">MEJOR VALOR</div>
+                    <h3 class="pricing-title">Cuota Anual</h3>
+                    <div class="pricing-price">
+                        <span style="font-size: 1.5rem; text-decoration: line-through; color: var(--color-gray); margin-right: 10px;">365.00€</span>
+                        299.99€
+                    </div>
+                    <p class="pricing-period"></p>
+
+                    <ul class="pricing-features">
+                        <li>Matrícula GRATIS</li>
+                        <li>2 Meses de Ahorro</li>
+                        <li>Opción de Congelar</li>
+                    </ul>
+
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=c6c98725c0a99e73303d8b35fd44d94035b8&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-primary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+                <!-- Plan 4: Pase de 1 día -->
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Pase de 1 día</h3>
+                    <div class="pricing-price" style="font-size: 2.5rem;">7€</div>
+                    <p class="pricing-period">Acceso 1 día</p>
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=4b2da4731b631bc5411a6ba83995471837fd&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-secondary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+                <!-- Plan 5: Pase de 1 semana -->
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Pase de 1 semana</h3>
+                    <div class="pricing-price" style="font-size: 2.5rem;">12€</div>
+                    <p class="pricing-period">7 días naturales</p>
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=b05f0237d7a6960606507c2cd7acbde025eb&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-secondary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+                 <!-- Plan 6: Pase de 2 semanas -->
+                 <div class="pricing-card">
+                    <h3 class="pricing-title">Pase de 2 semanas</h3>
+                    <div class="pricing-price" style="font-size: 2.5rem;">22€</div>
+                    <p class="pricing-period">14 días naturales</p>
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=a3434b2817a9cc0c50f3b95643de42e9951b&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-secondary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+                 <!-- Plan 7: Pase de 10 días -->
+                 <div class="pricing-card">
+                    <h3 class="pricing-title">Pase de 10 días</h3>
+                    <div class="pricing-price" style="font-size: 2.5rem;">35€</div>
+                    <p class="pricing-period">10 días naturales</p>
+                    <a href="https://goldeneagle.virtuagym.com/webshop/product?id=b57cd88f5c80d2865aa390cedaaa721225fd&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-secondary full-width" target="_blank">COMPRAR</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-lg">
+                <h2>Todos los Planes Incluyen</h2>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <div class="card-icon">🔓</div>
+                    <h3 class="card-title">Sin Permanencia</h3>
+                    <p class="card-text">Cancela cuando quieras, sin penalizaciones</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Evaluación Inicial</h3>
+                    <p class="card-text">Análisis completo de tu estado físico</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-icon">📱</div>
+                    <h3 class="card-title">App Móvil</h3>
+                    <p class="card-text">Gestiona tus entrenamientos desde tu móvil</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-icon">🏋️</div>
+                    <h3 class="card-title">Equipamiento Premium</h3>
+                    <p class="card-text">Máquinas de última generación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gradient">
+        <div class="container">
+            <div class="text-center mb-lg">
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card mb-md">
+                    <h3 class="card-title">¿Hay periodo de permanencia?</h3>
+                    <p class="card-text">No, todos nuestros planes son sin permanencia. Puedes cancelar cuando quieras
+                        sin penalizaciones.</p>
+                </div>
+
+                <div class="card mb-md">
+                    <h3 class="card-title">¿Puedo cambiar de plan?</h3>
+                    <p class="card-text">Sí, puedes cambiar de plan en cualquier momento. La diferencia se prorrateará
+                        en tu próxima factura.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">¿Puedo congelar mi membresía?</h3>
+                    <p class="card-text">Sí, puedes congelar tu membresía hasta 2 meses al año por motivos justificados
+                        (vacaciones, lesión, etc.).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="mb-md">¿Listo para Comenzar?</h2>
+            <p style="font-size: 1.2rem; color: var(--color-gray); margin-bottom: 2rem;">
+                Únete a Golden Eagle hoy y comienza tu transformación
+            </p>
+            <a href="https://goldeneagle.virtuagym.com/webshop/product?id=fe01d4bfed605fd75d3d7847f0813a884d75&club=RlpxM3BlM216R0ZEQjlnWWpnZEN4UT09" class="btn btn-primary btn-large" target="_blank">APÚNTATE</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Golden Eagle</h3>
+                    <p>Gimnasio boutique dedicado a transformar vidas a través del fitness personalizado y la comunidad.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/goldeneagle_es/" target="_blank" class="social-link" aria-label="Instagram"></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <p><a href="index.html">Inicio</a></p>
+                    <p><a href="membresias.html">Membresías</a></p>
+                    <p><a href="instalaciones.html">Instalaciones</a></p>
+                    <p><a href="contacto.html">Contacto</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 46760 Tavernes de la Valldigna, València</p>
+                    <p>📞 <a href="tel:633790004">633 790 004</a></p>
+                    <p>⏰ Lun-Sab: 6:00 - 23:00</p>
+                    <p>⏰ Dom: 9:00 - 13:30</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Golden Eagle. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Countdown Timer
+        function startCountdown(durationInSeconds) {
+            const countdownElement = document.getElementById('offerTimer');
+            if(!countdownElement) return;
+
+            let storedEndTime = localStorage.getItem('offerEndTime');
+            let now = new Date().getTime();
+
+            if (!storedEndTime || now > storedEndTime) {
+                 const endTime = now + durationInSeconds * 1000;
+                 localStorage.setItem('offerEndTime', endTime);
+                 storedEndTime = endTime;
+            }
+
+            function updateTimer() {
+                now = new Date().getTime();
+                let diff = storedEndTime - now;
+
+                if (diff < 0) {
+                    const newEndTime = now + (24 * 60 * 60 * 1000); 
+                    localStorage.setItem('offerEndTime', newEndTime);
+                    storedEndTime = newEndTime;
+                    diff = newEndTime - now;
+                }
+
+                let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                const hoursEl = document.getElementById('hours');
+                const minutesEl = document.getElementById('minutes');
+                const secondsEl = document.getElementById('seconds');
+
+                if (hoursEl) hoursEl.textContent = hours;
+                if (minutesEl) minutesEl.textContent = minutes;
+                if (secondsEl) secondsEl.textContent = seconds;
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        // Start countdown (24 hours in seconds)
+        window.onload = function () {
+            startCountdown(24 * 60 * 60);
+        };
+    </script>
+</body>
+
+</html>
